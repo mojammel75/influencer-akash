@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ 
+}
+.main-div{
+    width: 870px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+header{
+    display: flex;
+    margin-bottom: 50px;
+}
+.header-title{
+    width: 420px;
+}
+.header-nav{
+    width: 430px;
+    position: relative;
+}
+.header-nav ul{
+    display: flex;
+    position: absolute;
+    right: 10px;
+  
+}
+.header-nav ul li{
+    list-style-type: none;
+    margin-right: 15px;
+    
+}
+.header-nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.a{
+    display: flex;
+}
+.a-head{
+    width: 430px;
+    margin-top: 40px;
+}
+.a-head h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.a-head p{
+    margin-bottom: 15px;
+}
+.a-head button{
+    background-color: crimson;
+    color: white;
+    padding: 8px 10px;
+    border:1px solid crimson;
+    border-radius: 8px;
+}
+.a-image{
+    width: 420px;
+    background-image: url(images/Circle design.svg);
+}
+.a-image img{
+    width: 100%;
+}
+.c-header h1{
+    text-align: center;
+}
+.d{
+
+}
+.d-a{
+    width: 270px;
+    padding-left: 10px;
+
+}
+.d-a img{
+    margin-bottom: 9px;
+}
+.d-a h1,h4{
+    margin-bottom: 5px;
+}
+.d-a p .star{
+    color: darkgoldenrod;
+    font-size: 10px;
+}
+.d-a p{
+    margin-bottom: 8px;
+}
