@@ -4,10 +4,13 @@
     box-sizing: border-box;
  
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .main-div{
     width: 870px;
     margin: 0 auto;
-    border: 1px solid black;
+   
 }
 header{
     display: flex;
@@ -24,6 +27,7 @@ header{
     display: flex;
     position: absolute;
     right: 10px;
+    margin-top: 8px;
   
 }
 .header-nav ul li{
@@ -37,7 +41,8 @@ header{
     color: black;
 }
 .a{
-    display: flex;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .a-head{
     width: 430px;
@@ -49,6 +54,7 @@ header{
 }
 .a-head p{
     margin-bottom: 15px;
+    font-weight: bold;
 }
 .a-head button{
     background-color: crimson;
@@ -64,19 +70,32 @@ header{
 .a-image img{
     width: 100%;
 }
+.c{
+    margin: 10px;
+}
 .c-header h1{
     text-align: center;
 }
 .d{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
 
 }
 .d-a{
     width: 270px;
+    margin-left: 10px;
+    margin-right: 5px;
     padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 3px 3px 15px 2px grey;
+    border-radius: 5px;
 
 }
 .d-a img{
     margin-bottom: 9px;
+    width: 100%;
+    padding-top: 5px;
 }
 .d-a h1,h4{
     margin-bottom: 5px;
@@ -87,4 +106,121 @@ header{
 }
 .d-a p{
     margin-bottom: 8px;
+}
+
+.e{
+
+}
+.e-div{
+    position: relative;
+}
+.e-div h3{
+ position:absolute;
+ right:10px;
+background-color: crimson;
+color: white;
+margin-top: 10px;
+padding-bottom: 10px;
+padding-left: 8px;
+text-align: center;
+padding-top: 5px;
+padding-right: 5px;
+border: 1px solid crimson;
+border-radius: 5px;
+}
+.e-div h3 a{
+ text-decoration: none;
+ color: white;
+ font-size: 14px;
+}
+footer{
+    height: 170px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+.foter-div{
+    text-align: center;
+    padding-top: 30px;
+}
+.foter-div h2,h4,h5{
+    margin-top: 5px;
+}
+.foter-div p a{
+    color: white;
+    margin-left: 10px;
+
+}
+.foter-div p{
+    margin-top: 10px;
+    
+}
+@media screen and (max-width:900px) {
+    .main-div{
+        margin-left: 10px;
+    }
+    header{
+        width: 600px;
+    }
+    .a{
+        grid-template-columns: repeat(2, 1fr);
+        width: 600px;
+       
+    }
+    .a-head{
+        margin-top: 10px;
+    }
+    .c{
+        width: 600px;
+          
+        }
+
+        .d{
+            grid-template-columns: repeat(2, 1fr);
+            width: 600px;
+        }
+        .d-a{
+            margin:0 auto;
+           }
+       
+           footer{
+               width: 600px;
+           }
+}
+
+
+@media screen and ( max-width: 688px){
+    .main-div{
+        margin-left: 10px;
+    }
+
+    header{
+        width: 500px;
+        background-color: tomato;
+    }
+    .a{
+         grid-template-columns: repeat(1, 1fr);
+         width: 500px;
+    }
+    .a-head{
+        margin-top: 10px;
+    }
+    main{
+        
+    }
+    .c{
+    width: 500px;
+      
+    }
+    .d{
+        grid-template-columns: repeat(1, 1fr);
+        width: 500px;
+    }
+    .d-a{
+     margin:0 auto;
+    }
+
+    footer{
+        width: 500px;
+    }
 }
