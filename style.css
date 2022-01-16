@@ -12,6 +12,8 @@ body{
     margin: 0 auto;
    
 }
+
+/* header star  */
 header{
     display: flex;
     margin-bottom: 50px;
@@ -39,7 +41,11 @@ header{
     text-decoration: none;
     font-weight: 700;
     color: black;
-}
+} 
+/* header end  */
+
+ /* section a start */
+  /* section a start */
 .a{
     
     display: flex;
@@ -70,9 +76,15 @@ header{
 .a-image img{
     width: 100%;
 }
+
+ /* section a end*/
+
+  /* section b start*/
 .b{
 
 }
+
+
 .b-a{
     width: 600px;
     margin: 0 auto;
@@ -90,12 +102,19 @@ header{
    width: 100%;
    padding: 10px;
 }
+
+ /* section b end*/
+
+  /* section c start*/
 .c{
     margin: 10px;
 }
 .c-header h1{
     text-align: center;
 }
+ /* section a end*/
+
+  /* section d star */
 .d{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -127,6 +146,9 @@ header{
 .d-a p{
     margin-bottom: 8px;
 }
+ /* section d end*/
+
+  /* section e start */
 
 .e{
 
@@ -137,22 +159,25 @@ header{
 .e-div h3{
  position:absolute;
  right:10px;
-background-color: crimson;
-color: white;
+
+
 margin-top: 10px;
 padding-bottom: 10px;
 padding-left: 8px;
 text-align: center;
 padding-top: 5px;
 padding-right: 5px;
-border: 1px solid crimson;
+
 border-radius: 5px;
 }
 .e-div h3 a{
  text-decoration: none;
- color: white;
+ color: crimson;
  font-size: 14px;
 }
+
+/* section e end */
+/* section f start */
 .f{
   display: flex;
 }
@@ -184,6 +209,9 @@ border-radius: 5px;
 color: white;
 padding: 7px 10px;
 }
+/* section f end*/
+
+ /* footer start */
 footer{
     height: 170px;
     margin-top: 10px;
@@ -206,9 +234,98 @@ footer{
     margin-top: 10px;
     
 }
+
+ /* footer end*/
+@media screen and (max-width:768px){
+    header{
+        flex-direction: column;
+        
+    }
+    .header-title{
+        margin-left: 40px;
+       
+    }
+    .header-nav{
+        margin-left: 20px;
+    }
+    .header-nav ul{
+    
+        width: 100%;
+      
+    }
+    .a{
+        flex-direction: column;
+    }
+    .a-head{
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .b{
+ margin-left: 100px;
+    }
+    .b-a{
+        
+        width: 440px;
+        margin-left: 10px;
+
+    }
+    .b-a ul li {
+        width: 70px;
+    }
+    .b-a ul li img{
+        width: 100%;
+    }
+    .c{
+        margin-left: 150px;
+    }
+    .c-header{
+      width: 300px;
+      margin-left: 40px;
+    }
+    .d{
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+    .d-a{
+        width: 50%;
+        margin-left: 10px;
+    }
+    .e{
+
+    }
+    .e-div{
+        width: 200px;
+        margin-left: 30px;
+    }
+    .f{
+       display: flex; 
+    }
+    .f-img{
+        width: 250px;
+        margin-left: 20px;
+    }
+    .f-title{
+
+    }
+    footer{
+        width: 100%;
+        margin-left: 20px;
+
+    }
+    .foter-div{
+
+        width: 600px;
+        margin-left:30px;
+       
+    }
+}
+
+
+ /* responsive mobile view start */
 @media screen and ( max-width:688px) {
     header{
         flex-direction: column;
+       
        
         
     
@@ -281,3 +398,4 @@ footer{
     }
     
 }
+/* responsive mobile end */
