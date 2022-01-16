@@ -392,10 +392,15 @@ footer{
 
     }
     footer{
-        width: 50%;
+        width: 100%;
         margin-left: 20px;
 
     }
+    .foter-div{
+        width: 400px;
+        margin-left: 20px;
+       
+    }  
     
 }
 /* responsive mobile end */
